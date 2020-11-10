@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Projects | Chase Fensore</title>
+    <link href="stylesheets/site.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+     <div class="navbar-site">
+        <p id="headName">Chase Fensore</p>
+	<ul>
+	 <li><a href="./index.html">Home</a></li>
+	 <li><a href="./aboutme.html">About Me</a></li>
+         <li><a href="./projects.html">Projects</a></li>
+         <li><a href="./research.html">Research</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+	</ul>
+</div>
+ 
+     <div id="content">
+  <h1>Projects</h1>
+<table>
+ <tr>
+ <td>
+    <div>
+    </div>
+    <div>
+      <h2 role="link"><a href="https://github.com/fensorechase/Integrate-IR-Data">Simpson's Rule: Automate IR Data Integration</a></h2>
+      <p><b>Technologies: </b>Python, pandas, numpy, scipy</p>
+      <p><b>Description: </b>I wrote this python script to automate integration of infrared spectrometry data. Area under the curve(AUC) of an IR spectrum is often useful becuase it is proportional to the concentration of absorbing moieties. However, an IR spectrometer outputs hundreds of files, making it tedious to calculate AUC for all csv files from a group of experiements. This program accespts user input for lower and upper integration limits, parses through a given folder of .csv files, and finds AUC for each input file using Simpson's rule. The AUC for each input file is written to a corresponding otuptut file.</p>
+    </div>
+ </td>
+ </tr>
+ <tr>
+ <td>
+    <div>
+    </div>
+    <div>
+      <h2 role="link"><a href="https://github.com/fensorechase/BrazilEvents-GoogleCalendar">Investment Events Webscraper</a></h2>
+      <p><b>Technologies: </b>Python, GCal API, beautiful soup(bs4)</p>
+      <p><b>Description: </b>The purpose of this project was to streamline sourcing of relevant investment events for startups. I built a python script to write events to your Google Calendar using GCal API. The command line utility takes a input event URL, then parses with BeautifulSoup. Then, OAuth2.0 is used to verify the user's GCal account, and the event is automatically added to the user's GCal.</p>
+    </div>
+ </td>
+ </tr>
+ <tr>
+ <td>
+    <div>
+    </div>
+    <div>
+      <h2 role="link"><a href="https://github.com/fensorechase/NISTscraper">NIST Webbook Spectrum Scraper (Infrared, Mass Spec)</a></h2>
+      <p><b>Technologies: </b>Java, Selenium</p>
+      <p><b>Description: </b>This project was built to automate data acquisition for a Machine Learning project in my research lab. It is a command line utility that lets a user supply an input file with CAS ID's, and recieve back their IR or Mass spectra files.</p>
+    </div>
+ </td>
+ </tr>
+ <tr>
+ <td>
+    <div>
+    </div>
+    <div>
+      <h2 role="link"><a href="https://github.com/fensorechase/BrazilEvents-GoogleCalendar">Android App: LED Bluetooth Control</a></h2>
+      <p><b>Technologies: </b>Java, C++, Android Studio, Arduino</p>
+      <p><b>Description: </b>I built an Android app that allows the uesr to control the intensity of a LED via Bluetooth communication. An HC-05 Bluetooth module is used for hardware with an Arduino Uno to receive the LED intensity set on the Android app.</p>
+    </div>
+ </td>
+ </tr>
+</table>
+
+</div> <!-- End content -->
+
+    </div> <!-- End content -->
+   <div id="footer"> 
+  <div class="container">
+    <p> Contact me:
+     <br>
+	Email: fensore.1@osu.edu 
+	<br>
+	<a href="https://www.linkedin.com/in/chase-fensore/">LinkedIn</a>
+	<br>
+	<a href="https://github.com/fensorechase">GitHub</a>
+	<br>
+	<a href="https://www.instagram.com/_chase31/?hl=en">Instagram</a>
+	<br>
+        <p>Designed and built by Chase Fensore</p>
+	
+     <br>
+    </p>
+  </div>
+</div> 
+ 
+  </body>
+</html>

@@ -1,0 +1,186 @@
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  text-align: left; }
+
+ul.papers li, ul.presentation li {
+  margin-top: 1em; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.portraitImage {
+  width: 30%;
+  height: 30%; }
+
+.projectImage {
+  /* TODO: size proj images appropriately. */
+  width: 100%;
+  height: 100%; }
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */ }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%; } }
+
+.container {
+  width: 64%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+a {
+  background: transparent;
+  color: #7395AE;
+  /* bb0000 */
+  text-decoration: none; }
+
+a:active, a:hover {
+  outline: 0; }
+
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: underline; }
+
+a:focus {
+  outline: thin dotted;
+  outline-offset: -2px; }
+
+.list_contrast {
+  color: #bb0000; }
+
+.page-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  font-family: 'Georgia', serif; }
+
+.page-header .site-title {
+  font-size: 2em;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #696969; }
+
+.page-header .site-subtitle {
+  margin-bottom: 0px;
+  font-weight: 100;
+  font-style: italic;
+  color: #696969; }
+
+.page-header a {
+  color: inherit; }
+
+.navbar a {
+  color: blue; }
+
+#footer {
+  font-size: 0.8em;
+  color: #696969;
+  background-color: #ebebeb;
+  padding: 1px;
+  margin-top: 40px; }
+
+.navbar-site {
+  display: inline; }
+
+.navbar-site ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden; }
+
+.navbar-site li {
+  display: inline-block; }
+
+.navbar-site li:last-child {
+  border-right: none; }
+
+.navbar-site li a {
+  display: block;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none; }
+
+.navbar-site li a:hover {
+  background-color: #555;
+  color: white; }
+
+.label {
+  font-size: 17px;
+  font-weight: bold; }
+
+address {
+  font-style: normal; }
+
+#headName {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", sans-serif; }
+
+/* Flip card selectors below*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.flip-card-front {
+  background-color: #FFFFFF;
+  color: black; }
+
+.flip-card-back {
+  background-color: #FFFFFF;
+  color: black;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+/* End flip card selectors */
